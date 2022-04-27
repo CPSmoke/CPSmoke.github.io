@@ -30,7 +30,7 @@ $(document).ready(function(){
         $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
       });
     });
-  };
+  }
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
@@ -99,4 +99,16 @@ $(document).ready(function(){
     });
     return false;
   });
+
+  //  Smooth scroll and pageup
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  new WOW().init();
 });
