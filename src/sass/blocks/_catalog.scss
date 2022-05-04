@@ -117,7 +117,7 @@
         &__content {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-115%);
             transition: 0.5s all;
             &_active {
                 transform: translateX(0%);
@@ -131,14 +131,14 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
+            margin-bottom: 0;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
             ul {
-                padding-left: 17px;
-                margin-bottom: 0;
                 list-style-type: none;
+                padding-left: 17px;
             }
             li {
                 position: relative;
